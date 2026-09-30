@@ -247,7 +247,8 @@ public class PlayerController : MonoBehaviour
     }
     public virtual void Die()
     {
-        Destroy(gameObject);
+        Debug.Log("Game Over! Quay về Main Menu...");
+        SceneManager.LoadScene(0); // Màn hình Main Menu luôn nằm ở số 0 trong Build Profiles
     }
 
     [Header("UI Màn hình kết thúc")]
